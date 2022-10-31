@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Keamanan Data</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="Home.html">3ptografy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+          </ul>
+          <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Mulai Belajar
+            </button>
+            <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link"href="Home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="caesar.html">Caesar</a></li>
+                <li class="nav-item"><a class="nav-link" href="vignere.html">Vignere</a></li>
+                <li class="nav-item"><a class="nav-link" href="persegi.html">Transposisi</a></li>
+                <li class="nav-item"><a class="nav-link" href="zigzag.html">ZigZag</a></li>
+                <li class="nav-item"><a class="nav-link" href="hill.html">Hill</a></li>
+                <li class="nav-item"><a class="nav-link" href="affine.html">Affine</a></li>
+            </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <!-- Post content-->
+          <article>
+            <!-- Post header-->
+            <header class="mb-4">
+              <!-- Post title-->
+              <h1 class="fw-bolder mb-1">Playfair</h1>
+              <!-- Post meta content-->
+              <div class="text-muted fst-italic mb-2">
+                Posted on January 1, 2022 by Team3Orang
+              </div>
+              <!-- Post categories-->
+              
+            </header>
+            <!-- Preview image figure-->
+            <figure class="mb-4">
+              <img
+                class="img-fluid rounded"
+                src="assets/playfair.png"
+                alt="..."
+              />
+            </figure>
+            <!-- Post content-->
+            <section class="mb-5">
+              <p class="fs-5 mb-4">
+                Playfair cipher adalah cipher klasik yang ditemukan
+                oleh Sir Charles Wheatstone dan Baron Lyon 
+                Playfair[1]. Kekuatan dari algoritma ini adalah pada 
+                kuncinya yang menyusun bujursangkar 5x5. 
+                Kemungkinan kunci : 25! = 
+                15.511.210.043.330.985.984.000.000.
+              </p>
+              <p class="fs-5 mb-4">
+                Namun, playfair cipher bisa dipecahkan dengan teknik 
+                frekuensi distribusi ganda yaitu teknik yang 
+                menghitung frekuensi kemunculan pasangan dua huruf 
+                cipherteks yang kemudian dibandingkan dengan 
+                frekuensi pasangan dua huruf pada suatu bahasa. 
+                Disamping itu, hasil dekripsi playfair dapat 
+                menimbulkan ambiguitas karena saat enkripsi 
+                plainteks, semua huruf J pada plainteks diganti 
+                terlebih dahulu dengan huruf I. 
+              </p>
+              <p class="fs-5 fw-bolder mb-4">
+                • Serangan-serangan yang mungkin dihadapi terhadap 
+                    algoritma kriptografi Playfair antara lain:
+              </p>
+              <p class="fs-5 mb-4">1.Exhaustive attack</p>
+              <p class="fs-5 mb-4">2.Ciphertext-only attack</p>
+              <p class="fs-5 mb-4">3.Known-plaintext attack</p>
+              <p class="fs-5 mb-4">4.Chosen-plaintext attack</p>
+              <p class="fs-5 mb-4">5. Adaptive-chosen-plaintext attack</p>
+              <p class="fs-5 mb-4">6.Chosen-ciphertext attack</p>
+              <p class="fs-5 mb-4">7. Teknik analisis frekuensi</p>
+              <p class="fs-5 fw-bolder mb-4">
+                • Algoritma kriptografi Playfair dikatakan aman 
+                apabila memenuhi kriteria berikut : 
+              </p>
+              <p class="fs-5 mb-4">1. Persamaan matematis yang menggambarkan 
+                operasi algoritma kriptografi sangat kompleks 
+                sehingga algoritma tidak mungkin dipecahkan 
+                secara analitik. </p>
+              <p class="fs-5 mb-4">2.Biaya untuk memecahkan cipherteks 
+                melampaui nilai informasi yang terkandung di 
+                dalam cipherteks tersebut. </p>
+              <p class="fs-5 mb-4">3. Waktu yang diperlukan untuk memecahkan 
+                cipherteks melampaui lamanya waktu informasi 
+                tersebut harus dijaga kerahasiaannya. </p>
+              <p class="fs-5 fw-bold mb-4">-> Kelemahan algoritma kriptografi Playfair</p>
+              <p class="fs-5 mb-4"> Kelemahan algoritma kriptografi Playfair adalah 
+                pembangkitan kuncinya. Panjang kunci ditentukan 
+                sebanyak 36 huruf/karakter dengan setiap hurufnya 
+                berbeda sehingga pengguna sulit mencari kunci yang 
+                mudah diingat untuk digunakan kembali pada saat 
+                dekripsi.</p>
+              <p class="fs-5 mb-4">Kelemahan ini bisa saja diatasi dengan pemangkasan 
+                huruf-huruf yang berulang dari kalimat yang mudah 
+                diingat. Namun, apabila hasil pemangkasan kurang 
+                dari 36 karakter, maka timbul masalah baru. Bila 
+                karakter sisa diisi secara default, penyerang menjadi 
+                lebih mudah memecahkan cipherteks hasil enkripsi.</p>
+              <p class="fs-5 mb-4">Metode lain untuk menutupi kelemahan tadi adalah 
+                dengan cara membangkitkan secara acak deret 
+                karakter untuk menempati kotak 6x6 tersisa yang 
+                kemudian disimpan didalam header plainteks.</p>
+              <p class="fs-5 mb-4">Kunci pun dibatasi tidak boleh lebih dari 36 karakter 
+                sehingga kompleksitas algoritma terbatas sebatas itu. 
+                Namun, jika diinginkan, dengan memasukkan 
+                kelebihan kunci ke kunci untuk tahapan ke-dua, maka
+                4 
+                masalah ini bisa diselesaikan. </p>
+                <p class="fw-bold fs-5 mb-4">Contoh Soal : </p>
+                <p class="fs-5 mb-4">Plaintext: SERANG MARKAS MUSUH DARI UTARA JAM TUJUH PAGI </p>
+                <p class="fs-5 mb-4">Kunci: indonesia </p>
+                <p class="fw-bold fs-5 mb-4">Penyelesaian </p>
+                <p class="fs-5 mb-4">1. Bagi setiap huruf menjadi berpasang pasangan</p>
+                <p class="fs-5 mb-4">SE RA NG MA RK AS MU SU HD AR IU TA RA JA MT UJ UH PA GI</p>
+                <p class="fs-5 mb-4">2. Membuang huruf di kata kunci yang berulang dan huruf j</p>
+                <p class="fs-5 mb-4">INDOESA</p>
+                <p class="fs-5 mb-4">3. Membuat table 5x5 dengan memasukkan kata kunci yang sudah dibuang huruf berulang dan huruf j, serta ditambahkan huruf yang belum terdapat pada kata kunci sehingga table menjadi penuh.</p>
+                <img class="img-fuild rounded"src="assets/contohPlayfair.png">
+                <p class="fs-5 mb-4">Jika antara 2 huruf pasangan tersebut tidak satu baris atau satu kolom pada tabel (ingat baris itu mendatar, kolom itu dari atas ke bawah), maka gunakanlah 2 huruf yang menjadi pertemuan dari huruf tersebut.
+                    Jika antara 2 huruf yang berpasangan itu berada satu kolom pada tabel, maka masing-masing huruf akan turun 1 tingkat ke bawahnya.
+                    Jika antara 2 huruf yang berpasangan berada itu satu baris dalam tabel, maka masing-masing huruf akan ke kanan 1 langkah.</p>
+                    <p class="fw-bold fs-5 mb-4">Chiper text: FI QB IH HF XR BA UZ FP KN BQ EP QC QB NS LU PE QM QS PS</p>
+
+              
+          </section>
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+              <div class="card-header"></div>
+              <a href="soalpalyfair.html" class="btn btn-primary active"  aria-pressed="true">Exercise</a>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+              <div class="card-header">TAUKAH KAMU?</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="fs-15">Pada saat kejayaannya, sandi ini dijuluki le chiffre indéchiffrable (bahasa Prancis: 'sandi yang tak terpecahkan'). Metode pemecahan sandi ini baru ditemukan pada abad ke-19. Pada tahun 1854, Charles Babbage menemukan cara untuk memecahkan sandi Vigenère.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-12">
+              <div class="card-header">Fakta Menarik</div>
+              <div class="card-body">
+                  Tentunya selain kepada Anda yang mempunyai kunci rahasia atau otoritas untuk membuka informasi terkait menggunakan kata sandi yang tepat. Tujuan kedua berkaitan dengan penjagaan perubahan data yang tidak sah.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; Team 3 Orang 2022
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

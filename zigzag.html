@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Keamanan Data</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="fs-5">
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="Home.html">3ptografy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+          </ul>
+          <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Mulai Belajar
+            </button>
+            <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link"href="Home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="caesar.html">Caesar</a></li>
+                <li class="nav-item"><a class="nav-link" href="vignere.html">Vignere</a></li>
+                <li class="nav-item"><a class="nav-link" href="playfair.html">Playfire</a></li>
+                <li class="nav-item"><a class="nav-link" href="persegi.html">Transposisi</a></li>
+                <li class="nav-item"><a class="nav-link" href="hill.html">Hill</a></li>
+                <li class="nav-item"><a class="nav-link" href="affine.html">Affine</a></li>
+            </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <!-- Post content-->
+          <article>
+            <!-- Post header-->
+            <header class="mb-4">
+              <!-- Post title-->
+              <h1 class="fw-bolder mb-1">ZIG ZAG</h1>
+              <!-- Post meta content-->
+              <div class="text-muted fst-italic mb-2">
+                Posted on January 1, 2022 by Team3Orang
+              </div>
+              <!-- Post categories-->
+              
+            </header>
+            <!-- Preview image figure-->
+            <figure class="mb-4">
+              <img
+                class="img-fluid rounded"
+                src="assets/zigzag.png"
+                alt="..."
+              />
+            </figure>
+            <!-- Post content-->
+            <section class="mb-5">
+                <p  style="text-align:justify;">Sekilas tentang Algoritma Transposisi Zig-zag, ide awal pembentukan Algoritma ini adalah Algoritma Transposisi Kolom (Columnar Transposition Cipher) dan Algoritma Transposisi Rail Fance Cipher.<br />
+Langkah-langkah Pengerjaan Zig-zag Cipher:</p>
+<ol>
+<li style="text-align:justify;">Bentuk Bujursangkar <em>(Array) </em>untuk menampung banyaknya karakter plaintext.<br />
+Contoh: Banyak karakter plaintext = 10 , maka format array untuk menampung plaintext = 3*4 atau 4*3.</li>
+<li style="text-align:justify;">Tentukan Format Kunci Transposisi <em>( i ), i = urutan baris array</em></li>
+<li style="text-align:justify;">Proses Enkripsi Transposisi dalam Algoritma Zig-zag dapat dilakukan dengan 2 cara, boleh dilakukan secara baris (Zig-zag Baris) dan juga secara kolom (Zig-zag Kolom), pilih salah satu.<br />
+Jika kunci di variabel dengan <em>&#8220;i&#8221;</em> maka:<br />
+*Jika Transposisi Zig-zag Baris maka proses enkripsi : <em>(i , 1) (i+1, 2) (i , 3) (i+1 , 4) (i , 5)<br />
+</em>*Jik Transposisi Zig-zag Kolom maka proses enkripsi : <em>(1, i) (2, i+1) (3 , i) (4 , i+1) (5 , i) </em></li>
+</ol>
+<p><span id="more-1629"></span></p>
+<p style=" text-align:justify;font-weight:bold;">Contoh:</p>
+<p style="text-align:justify;">Plaintext = RIVALRYKRISTIANTOHONDRO</p>
+<p style="text-align:justify;">maka format array yang sesuai dengan jumlah plaintext = 4*6 atau 6*4</p>
+<p style="text-align:justify;">pada contoh kasus ini saya menggunakan 4*6</p>
+<p><a href="https://rivalryhondro.files.wordpress.com/2017/08/b1.png"><img data-attachment-id="1633" data-permalink="https://rivalryhondro.wordpress.com/2017/09/18/contoh-kasus-zigzag/b1/#main" data-orig-file="https://rivalryhondro.files.wordpress.com/2017/08/b1.png" data-orig-size="630,115" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="b1" data-image-description="" data-image-caption="" data-medium-file="https://rivalryhondro.files.wordpress.com/2017/08/b1.png?w=300" data-large-file="https://rivalryhondro.files.wordpress.com/2017/08/b1.png?w=630" class="aligncenter size-full wp-image-1633" src="https://rivalryhondro.files.wordpress.com/2017/08/b1.png?w=700" alt="" srcset="https://rivalryhondro.files.wordpress.com/2017/08/b1.png 630w, https://rivalryhondro.files.wordpress.com/2017/08/b1.png?w=150 150w, https://rivalryhondro.files.wordpress.com/2017/08/b1.png?w=300 300w" sizes="(max-width: 630px) 100vw, 630px"   /></a></p>
+<p>Teknik proses enkripsi yang saya terapkan adalah Algoritma Zig-zag Baris</p>
+<p>Kunci transposisi: 2 4 3 1</p>
+<p>Penyelesaian:</p>
+<p><a href="https://rivalryhondro.files.wordpress.com/2017/08/bb.png"><img data-attachment-id="1634" data-permalink="https://rivalryhondro.wordpress.com/2017/09/18/contoh-kasus-zigzag/bb/#main" data-orig-file="https://rivalryhondro.files.wordpress.com/2017/08/bb.png" data-orig-size="629,1311" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="bb" data-image-description="" data-image-caption="" data-medium-file="https://rivalryhondro.files.wordpress.com/2017/08/bb.png?w=144" data-large-file="https://rivalryhondro.files.wordpress.com/2017/08/bb.png?w=491" class="aligncenter size-full wp-image-1634" src="https://rivalryhondro.files.wordpress.com/2017/08/bb.png?w=700" alt="" srcset="https://rivalryhondro.files.wordpress.com/2017/08/bb.png 629w, https://rivalryhondro.files.wordpress.com/2017/08/bb.png?w=72 72w, https://rivalryhondro.files.wordpress.com/2017/08/bb.png?w=144 144w" sizes="(max-width: 629px) 100vw, 629px"   /></a></p>
+<p>Berikut ciphertext hasil proses enkripsi algoritma Zig-zag:</p>
+<p><a href="https://rivalryhondro.files.wordpress.com/2017/08/ba.png"><img data-attachment-id="1635" data-permalink="https://rivalryhondro.wordpress.com/2017/09/18/contoh-kasus-zigzag/ba/#main" data-orig-file="https://rivalryhondro.files.wordpress.com/2017/08/ba.png" data-orig-size="581,116" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ba" data-image-description="" data-image-caption="" data-medium-file="https://rivalryhondro.files.wordpress.com/2017/08/ba.png?w=300" data-large-file="https://rivalryhondro.files.wordpress.com/2017/08/ba.png?w=581" class="aligncenter size-full wp-image-1635" src="https://rivalryhondro.files.wordpress.com/2017/08/ba.png?w=700" alt="" srcset="https://rivalryhondro.files.wordpress.com/2017/08/ba.png 581w, https://rivalryhondro.files.wordpress.com/2017/08/ba.png?w=150 150w, https://rivalryhondro.files.wordpress.com/2017/08/ba.png?w=300 300w" sizes="(max-width: 581px) 100vw, 581px"   /></a></p>
+<p>Ciphertext= YARTSHOIDAORINNRO RKVILT</p>
+<div id="atatags-370373-635666a8bd1eb">
+        <script type="text/javascript">
+            __ATA.cmd.push(function() {
+                __ATA.initVideoSlot('atatags-370373-635666a8bd1eb', {
+                    sectionId: '370373',
+                    format: 'inread'
+                });
+            });
+        </script>
+    </div>			<div id="atatags-26942-635666a8bd249"></div>
+			
+			<script>
+				__ATA.cmd.push(function() {
+					__ATA.initDynamicSlot({
+						id: 'atatags-26942-635666a8bd249',
+						location: 120,
+						formFactor: '001',
+						label: {
+							text: 'Advertisements',
+						},
+						creative: {
+							reportAd: {
+								text: 'Report this ad',
+							},
+							privacySettings: {
+								text: 'Privacy',
+								
+							}
+						}
+					});
+				});
+			</script>
+              
+            </section>
+          </article>
+          <!-- Comments section-->
+          <section class="mb-5">
+            
+          </section>
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+              <div class="card-header"></div>
+              <a href="soalzig.html" class="btn btn-primary active"  aria-pressed="true">Exercise</a>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+              <div class="card-header">TAUKAH KAMU?</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="fs-15">Pada saat kejayaannya, sandi ini dijuluki le chiffre indéchiffrable (bahasa Prancis: 'sandi yang tak terpecahkan'). Metode pemecahan sandi ini baru ditemukan pada abad ke-19. Pada tahun 1854, Charles Babbage menemukan cara untuk memecahkan sandi Vigenère.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-12">
+              <div class="card-header">Fakta Menarik</div>
+              <div class="card-body">
+                  Tentunya selain kepada Anda yang mempunyai kunci rahasia atau otoritas untuk membuka informasi terkait menggunakan kata sandi yang tepat. Tujuan kedua berkaitan dengan penjagaan perubahan data yang tidak sah.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; Team 3 Orang 2022
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

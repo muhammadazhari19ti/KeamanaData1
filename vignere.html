@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Keamanan Data</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="Home.html">3ptografy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+        <div class="btn-group">
+          <button
+            type="button"
+            class="btn btn-info dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Mulai Belajar
+          </button>
+          <ul class="dropdown-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="caesar.html">Caesar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="playfair.html">Playfair</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="persegi.html">Transposisi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zigzag.html">ZigZag</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hill.html">Hill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="affine.html">Affine</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <!-- Post content-->
+          <article>
+            <!-- Post header-->
+            <header class="mb-4">
+              <!-- Post title-->
+              <h1 class="fw-bolder mb-1">VIGENERE</h1>
+              <!-- Post meta content-->
+              <div class="text-muted fst-italic mb-2">
+                Posted on January 1, 2022 by Team3Orang
+              </div>
+              <!-- Post categories-->
+              
+            </header>
+            <!-- Preview image figure-->
+            <figure class="mb-4">
+              <img
+                class="img-fluid rounded"
+                src="assets/vignere.png"
+                alt="..."
+              />
+            </figure>
+            <!-- Post content-->
+            <section class="mb-5">
+              <p class="fs-5 mb-4">
+                Sandi Vigenère adalah metode menyandikan teks alfabet dengan menggunakan deretan sandi Caesar berdasarkan huruf-huruf pada kata kunci. Sandi Vigenère merupakan bentuk sederhana dari sandi substitusi polialfabetik. Kelebihan sandi ini dibanding sandi Caesar dan sandi monoalfabetik lainnya adalah sandi ini tidak begitu rentan terhadap metode pemecahan sandi yang disebut analisis frekuensi. Giovan Batista Belaso menjelaskan metode ini dalam buku La cifra del. Sig. Giovan Batista Belaso (1553); dan disempurnakan oleh diplomat Prancis Blaise de Vigenère, pada 1586. Pada abat ke-19, banyak orang yang mengira Vigenère adalah penemu sandi ini, sehingga, sandi ini dikenal luas sebagai "sandi Vigenère".
+
+                Sandi ini dikenal luas karena cara kerjanya mudah dimengerti dan dijalankan, dan bagi para pemula sulit dipecahkan. Pada saat kejayaannya, sandi ini dijuluki le chiffre indéchiffrable (bahasa Prancis: 'sandi yang tak terpecahkan'). Metode pemecahan sandi ini baru ditemukan pada abad ke-19. Pada tahun 1854, Charles Babbage menemukan cara untuk memecahkan sandi Vigenère. Metode ini dinamakan tes Kasiski karena Friedrich Kasiski-lah yang pertama mempublikasikannya.Jika panjang kunci lebih pendek daripada panjang plainteks, maka kunci
+                diulang secara periodik.
+              </p>
+              <p class="fs-5 mb-4">
+                Pada dasarnya, setiap enkripsi huruf adalah Caesar cipher dengan kunci yang 
+              berbeda-beda.
+              (T + s) mod 26 = L
+              (H + o) mod 26 = V
+              </p>
+              <p class="fw-bold fs-5 mb-4">
+                contoh soal Plainteks :
+              <p class="fs-5 mb-4">Satu satunya hal yang aku tahu adalah bahwa aku tidak tahu apa apa
+              </p>
+              </p>
+              <p class="fs-5 fw-bolder mb-4 mt-5">
+                • Kunci: socrates</p>
+              <p class="fs-5 mb-4">
+                cara menjawabnya</p>
+            <p class="fw-bold fs-5 mb-4">Plaintext: satu satunya hal yang aku tahu adalah bahwa aku tidak tahu apa apa</p>
+            <p class="fw-bold fs-5 mb-4">Kunci menjadi: socr atessoc rat esso cra tess ocrate ssocr ate ssocr ates soc rat</p>
+                <p class="fs-5 mb-4"></p>
+              <p class="fs-5 mb-4">• Cipherteks:
+                <p class="fs-5 mb-4">kovl stxmfmc yae csfu cbu mezm ofrltl tsvyr ady larcb ttlm sdc rpt</p> 
+              </p>
+            
+              
+          </section>
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+          <!-- Search widget-->
+          <div class="card mb-4">
+            <div class="card-header"></div>
+            <a href="soalvignere.html" class="btn btn-primary active"  aria-pressed="true">Exercise</a>
+          </div>
+          <!-- Categories widget-->
+          <div class="card mb-4">
+            <div class="card-header">TAUKAH KAMU?</div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-12">
+                  <p class="fs-15">Pada saat kejayaannya, sandi ini dijuluki le chiffre indéchiffrable (bahasa Prancis: 'sandi yang tak terpecahkan'). Metode pemecahan sandi ini baru ditemukan pada abad ke-19. Pada tahun 1854, Charles Babbage menemukan cara untuk memecahkan sandi Vigenère.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Side widget-->
+          <div class="card mb-12">
+            <div class="card-header">Fakta Menarik</div>
+            <div class="card-body">
+                Tentunya selain kepada Anda yang mempunyai kunci rahasia atau otoritas untuk membuka informasi terkait menggunakan kata sandi yang tepat. Tujuan kedua berkaitan dengan penjagaan perubahan data yang tidak sah.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; Team 3 Orang 2022
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

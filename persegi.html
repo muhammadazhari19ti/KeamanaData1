@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Blog Post - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Responsive navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="Home.html">3ptografy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+          </ul>
+          <div class="btn-group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Mulai Belajar
+            </button>
+            <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link"href="Home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="caesar.html">Caesar</a></li>
+                <li class="nav-item"><a class="nav-link" href="vignere.html">Vignere</a></li>
+                <li class="nav-item"><a class="nav-link" href="playfair.html">Playfire</a></li>
+                <li class="nav-item"><a class="nav-link" href="zigzag.html">ZigZag</a></li>
+                <li class="nav-item"><a class="nav-link" href="hill.html">Hill</a></li>
+                <li class="nav-item"><a class="nav-link" href="affine.html">Affine</a></li>
+            </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Page content-->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <!-- Post content-->
+          <article>
+            <!-- Post header-->
+            <header class="mb-4">
+              <!-- Post title-->
+              <h1 class="fw-bolder mb-1">TRANSPOSISI</h1>
+              <!-- Post meta content-->
+              <div class="text-muted fst-italic mb-2">
+                Posted on January 1, 2022 by Team3Orang
+              </div>
+              <!-- Post categories-->
+              
+            </header>
+            <!-- Preview image figure-->
+            <figure class="mb-4">
+              <img
+                class="img-fluid rounded"
+                src="assets/transposisi.png"
+                alt="..."
+              />
+            </figure>
+            <!-- Post content-->
+            <section class="mb-5">
+              <p class="fs-5 mb-4">
+                Transposisi adalah metode pengenkripsian pesan dengan cara mengubah urutan 
+                huruf-huruf yang ada di dalam plainteks (pesan yang belum dienkripsi) 
+                menjadi cipherteks (pesan yang telah dienkripsi) 
+                dengan cara tertentu agar isi dari pesan tersebut tidak dimengerti kecuali oleh orang-orang tertentu.
+              </p>
+              <p class="fs-5 mb-4">
+                Pada dasarnya prinsip pengubahan pesan mirip dengan anagram seperti kata “melepas” diubah menjadi 
+                “saeelpm”, tapi tentu saja transposition cipher mempunyai rumus atau kunci tertentu yang diperlukan agar pesan 
+                bisa dimengerti.
+              </p>
+              <p class="fs-5 mb-4">
+                Pada cipher transposisi, huruf-huruf di dalam plainteks tetap saja, hanya saja urutannya diubah. Dengan kata 
+                lain algoritma ini melakukan transpose terhadap rangkaian karakter di dalam teks. Nama lain untuk metode ini 
+                adalah permutasi atau pengacakan (scrambling) karena transpose setiap karakter di dalam teks sama dengan 
+                mempermutasikan karakter-karakater tersebut.
+              </p>
+              <p class="fs-5 mb-4">
+                Algoritma kriptografi Metode Cipher Transposisi dapat diterapkan pada pengamanan password untuk 
+                menjaga keamanan data.Belum ada teknik pembobolan lain yang lebih efektif daripada brute force attack. Jadi untuk ukuran kunci 
+                sistem penyandian dengan Metode Transposisi Cipher masih tergolong bagus.
+              </p>
+              <p class="fs-5 fw-bolder mb-4">Penyandian Transposisi Route</p>
+              <p class="fs-5 mb-4">Penyandian transposisi dengan metode route 
+                hampir sama dengan metode Rail Fence. Penyandian Transposisi Route 
+                dilakukan dengan cara menuliskan teks asli secara kolom dari atas kebawah 
+                dalam sebuah kisi-kisi imajiner dengan ukuran yang telah disepakati. 
+                Teks sandinya dibaca dengan arah (route) sesuai perjanjian, misalnya dibaca 
+                secara 
+                <p class="fs-5 mb-4">(1) spiral dengan arah jarum jam, mulai dari kiri atas atau</p>
+                <p class="fs-5 mb-4">(2) secara ular tangga, mulai dari kanan bawah dan lain-lain cara pembacaannya.</p>
+                <p class="fs-5 mb-4">Penyandian route memiliki banyak sekali variasi algoritma pembacaan teks-nya. 
+                Namun tidak semua algoritma tersebut memberikan hasil teks sandi yang memenuhi standar “aman”. 
+                Beberapa algoritma tidak mengacak teks asli dengan sempurna, sehingga akan memberikan celah 
+                yang dapat dengan mudah dipecahkan oleh seorang kriptoanalisa.</p>
+                <p class="fs-5 mb-4">Penyandian transposisi route yang terkenal adalah Union Route yang digunakan oleh tentara Amerika selama perang sipil.
+                    Contoh penyandian transposisi route :</p>
+
+                    <p class="fs-5 fw-bolder mb-4">Plain Text :</p>
+                
+                    <p p class="fs-5 mb-4">TENTUKAN PRIORITAS ANDA SEBAB KITA TIDAK DAPAT MENGERJAKAN SEMUANYA X.</p>
+                    
+                    
+                    <p class="fs-5 mb-4">Algoritma : 5 baris, spiral arah jarum jam mulai dari kanan bawah.</p>
+                    
+                    
+                    <p class="fs-5 fw-bolder mb-4">Proses :</p>
+                    
+                    
+                    <p class="fs-5 mb-4">T K I A A B T D M R N A</p>
+                    
+                    <p class="fs-5 mb-4">E A O S S K I A E J S N</p>
+                    
+                    <p class="fs-5 mb-4">N N R A E I D P N A E Y</p>
+                    
+                    <p class="fs-5 mb-4">T P I N B T A A G K M A</p>
+                    
+                    <p class="fs-5 mb-4">U R T D A A K T E A U X</p>
+                    <p class="fs-5 fw-bolder mb-4">Hasil penyandian (teks sandi) :</p>
+                    
+                    <p class="fs-5 mb-4">XUAET KAADT RUTNE TKIAA BTDMR NANYA </p>
+                    <p class="fs-5 mb-4"> MKGAA TBNIP NAOSS KIAEJ SEANP DIEAR</p>
+              
+          </section>
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+              <div class="card-header"></div>
+              <a href="soaltrans.html" class="btn btn-primary active"  aria-pressed="true">Exercise</a>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+              <div class="card-header">TAUKAH KAMU?</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="fs-15">Pada saat kejayaannya, sandi ini dijuluki le chiffre indéchiffrable (bahasa Prancis: 'sandi yang tak terpecahkan'). Metode pemecahan sandi ini baru ditemukan pada abad ke-19. Pada tahun 1854, Charles Babbage menemukan cara untuk memecahkan sandi Vigenère.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-12">
+              <div class="card-header">Fakta Menarik</div>
+              <div class="card-body">
+                  Tentunya selain kepada Anda yang mempunyai kunci rahasia atau otoritas untuk membuka informasi terkait menggunakan kata sandi yang tepat. Tujuan kedua berkaitan dengan penjagaan perubahan data yang tidak sah.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; Team 3 Orang 2022
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
